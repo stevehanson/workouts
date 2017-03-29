@@ -1,5 +1,7 @@
 # Workouts Log
 
+This is a silly app used to log my workouts. It's mostly just an excuse to play around with React. Much of this was borrowed from [React Firebase Crud Example](https://github.com/griffinsockwell/react-firebase-crud).
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

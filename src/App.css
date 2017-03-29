@@ -1,24 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .App {
+  width: 94%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.divider {
+  width: 100%;
+  height: 4px;
+  background-color: #e6e6e6;
+  margin: 1.5em auto 1em;
+}
+
+.App-title {
   text-align: center;
+  margin-top: 0.5em;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 800;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.WorkoutInput-form {
+  width: 100%;
+  /*background: #4A90E2;*/
+  border-radius: 5px;
+  margin: 15px 0;
+  background: #fff;
+  padding: 1em;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/*.WorkoutInput-form i {
+  width: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}*/
+
+.WorkoutInput-form input[type="text"],
+.WorkoutInput-form input[type="date"]  {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  outline: none;
+  border: 2px solid #eee;
+  padding: 0.4em 1em;
+  background: none;
+  width: 100%;
 }
 
-.App-intro {
-  font-size: large;
+.WorkoutInput-day-of-week {
+  position: absolute;
+  top: 30px;
+  right: 2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ccc;
+  font-size: 0.9em;
+  background: #fff;
+  padding: 0.3em 1em 0.3em 2em; /* block the dropdown on desktop */
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.WorkoutInput-submit {
+  margin-top: 0.3em;
+}
+
+.Workout Input-form input:focus,
+.WorkoutInput-form input:invalid {
+  outline: none;
+  box-shadow: none;
+}
+
+.WorkoutList-empty {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+  font-size: 30px;
+  color: #DDD;
+}
+
+.WorkoutList-list {
+  margin-top: 1.5em;
+}
+
+.WorkoutListItem {
+  list-style-type: none;
+  width: 100%;
+  padding: 0.8em;
+  background: #FFF;
+  border-radius: 5px;
+  margin: 0.8em 0;
+  display: flex;
+}
+
+.WorkoutListItem-checked {
+  text-decoration: line-through;
+  color: #9B9B9B !important;
+}
+
+.WorkoutListItem span {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: scroll;
+  font-size: 15px;
+  color: #4A4A4A;
+}
+
+.Workout-notes {
+  border-left: 4px solid #44bbf5;
+  padding-left: 0.5em;
+  margin: 0.5em 0;
+}
+
+.WorkoutListItem button {
+  border: none;
+  background: none;
+  width: 46px;
+  cursor: pointer;
+  color: #CCC;
+}
+
+.WorkoutListItem button:focus {
+  outline: none;
+}
+
+.label-muted {
+  text-transform: uppercase;
+  color: #bbb;
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-bottom: 0.2em;
+}
+
+.form-group {
+  margin-bottom: 0.5em;
+  position: relative;
+}
+
+.button {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #44bbff;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 0.5em;
+  font-size: 1em;
+  outline: none;
+  border: none;
+  padding: 0.4em 1em;
+  width: 100%;
+}
+
+.icon-grey {
+  transition: all 0.2s;
+  color: #9b9b9b;
+}
+.icon-grey:hover {
+  color: #828282;
+}
+.icon-red {
+  transition: all 0.2s;
+  color: #d0011b;
+}
+.icon-red:hover {
+  color: #9d0114;
+}
+.icon-yellow {
+  transition: all 0.2s;
+  color: #f8e81c;
+}
+.icon-yellow:hover {
+  color: #dacb07;
 }

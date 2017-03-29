@@ -22,13 +22,18 @@ class WorkoutsList extends Component {
   componentDidMount() {
     workoutsRef.on('value', snapshot => {
       const workouts = [];
-      console.log(snapshot);
       snapshot.forEach(workout => {
-        console.log(workout.val());
         workouts.push({ ...workout.val(), key: workout.key });
       });
       this.setState({ workouts, workoutsLoading: false });
     });
+  }
+
+  workoutRemoved(workout) {
+    let update = {}
+    console.log('removing workout ' + workout.key);
+    update[workout.key] = null
+    workoutsRef.update(update)
   }
 
   renderWorkouts() {
@@ -38,7 +43,7 @@ class WorkoutsList extends Component {
     });
 
     return sortedWorkouts.map((workout) => {
-      return (<WorkoutListItem workout={workout} key={workout.date} />);
+      return (<WorkoutListItem workout={workout} workoutRemoved={this.workoutRemoved} key={workout.date} />);
     });
   }
 

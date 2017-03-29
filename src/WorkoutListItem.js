@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import moment from 'moment';
 
 class WorkoutListItem extends Component {
+  handleRemove() {
+    this.props.workoutRemoved(this.props.workout)
+  }
+
   render() {
     let workout = this.props.workout;
     let notes = '';
@@ -19,6 +23,8 @@ class WorkoutListItem extends Component {
 
           {notes}
         </div>
+
+        <i className="close-icon material-icons" onClick={this.handleRemove.bind(this)}>close</i>
       </li>
     );
   }

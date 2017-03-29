@@ -101,11 +101,7 @@ body {
   border-radius: 5px;
   margin: 0.8em 0;
   display: flex;
-}
-
-.WorkoutListItem-checked {
-  text-decoration: line-through;
-  color: #9B9B9B !important;
+  justify-content: space-between;
 }
 
 .WorkoutListItem span {
@@ -124,16 +120,13 @@ body {
   margin: 0.5em 0;
 }
 
-.WorkoutListItem button {
-  border: none;
-  background: none;
-  width: 46px;
+.WorkoutListItem .close-icon {
+  color: #ddd;
   cursor: pointer;
-  color: #CCC;
 }
 
-.WorkoutListItem button:focus {
-  outline: none;
+.WorkoutListItem .close-icon:hover {
+  color: #444;
 }
 
 .label-muted {

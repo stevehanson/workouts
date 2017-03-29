@@ -42,15 +42,15 @@ class WorkoutInput extends Component {
 
           <div className="form-group">
             <label className="label-muted">Notes (Optional)</label>
-            <input
+            <textarea
               onChange={(evt) => this.setState({ notes: evt.target.value })}
               value={this.state.notes}
-              type="text"
+              rows="2"
               placeholder="Enter notes..."
             />
           </div>
 
-          <input type="submit" value="Log it!" className="button primary WorkoutInput-submit" />
+          <input type="submit" value="Log it!" className="button large primary WorkoutInput-submit" />
         </form>
       </div>
     );

@@ -56,6 +56,7 @@ body {
   padding: 0.4em 1em;
   background: none;
   width: 100%;
+  appearance: none;
 }
 
 .WorkoutInput-day-of-week {
@@ -161,6 +162,7 @@ body {
   border: none;
   padding: 0.4em 1em;
   width: 100%;
+  appearance: none;
 }
 
 .icon-grey {

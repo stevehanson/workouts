@@ -34,7 +34,7 @@ class WorkoutsList extends Component {
   renderWorkouts() {
     const workouts = this.state.workouts;
     const sortedWorkouts = workouts.sort((a, b) => {
-      return moment(a.date).isBefore(moment(b.date));
+      return moment(a.date).isBefore(moment(b.date)) ? 1 : -1;
     });
 
     return sortedWorkouts.map((workout) => {

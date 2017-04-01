@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 
-import { workoutsRef, timeRef } from './firebase_refs';
+import { workoutsRef } from './firebase_refs';
 
 class WorkoutInput extends Component {
   constructor() {

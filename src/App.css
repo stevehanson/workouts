@@ -167,6 +167,11 @@ body {
   padding: 0.4em 1em;
   width: 100%;
   appearance: none;
+  transition: background-color 100ms;
+}
+
+.button:hover {
+  background-color: #22b0f0;
 }
 
 .button.large {

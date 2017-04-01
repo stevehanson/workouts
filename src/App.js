@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div className="App">
         <h2 className="App-title">Workouts Log</h2>
+        <a className="subtitle-link" href="https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine" target="_blank">View the routine</a>
 
         <WorkoutInput />
 

@@ -30,6 +30,13 @@ body {
   font-weight: 800;
 }
 
+.subtitle-link {
+  font-size: 0.8em;
+  text-align: center;
+  display: block;
+  margin-bottom: 1.9em;
+}
+
 .WorkoutInput-form {
   width: 100%;
   /*background: #4A90E2;*/
